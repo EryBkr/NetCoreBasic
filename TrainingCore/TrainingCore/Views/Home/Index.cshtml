@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TrainingCore.Models.Customer>
+
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+
+        @foreach (var item in Model)
+        {
+            <p>@item.Name</p>
+        }
+        I am @@Home
+
+        @try
+        {
+
+        }
+        catch (ArgumentException ex)
+        {
+
+            throw;
+        }
+        catch (Exception ex)
+        {
+
+            throw;
+        }
+        finally
+        {
+
+        }
+
+
+    </body>
+</html>

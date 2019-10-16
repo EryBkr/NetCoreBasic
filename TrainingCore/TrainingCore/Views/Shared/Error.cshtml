@@ -1,0 +1,16 @@
+﻿
+@{
+    Exception exception = (Exception)ViewData["HandleException"];
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <p>@exception.Message</p>
+</body>
+</html>

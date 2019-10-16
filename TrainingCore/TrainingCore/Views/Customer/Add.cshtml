@@ -1,0 +1,20 @@
+﻿@model TrainingCore.Models.Customer
+
+
+
+    <form asp-controller="Customer" asp-action="Add">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" /><br />
+        
+        <label asp-for="City"></label>
+        <select name="City">
+            <option value="1">İstanbul</option>
+        </select>
+        <input type="submit" value="Gönder" />
+    </form>
+
+    <customer-list count="2"></customer-list>
+
+@section MySection{ 
+    Some Content
+}
